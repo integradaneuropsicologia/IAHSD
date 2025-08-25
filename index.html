@@ -75,7 +75,7 @@
     <p class="muted">
       Assinale o quanto você concorda com cada afirmação. Opções:
       <b>DT</b>=Discordo totalmente (1), <b>D</b>=Discordo (2),
-      <b>N</b>=Nem discordo nem concordo (3), <b>C</b>=Concordo Totalmente (4),
+      <b>N</b>=Nem discordo nem concordo (3), <b>C</b>=Concordo (4),
       <b>CT</b>=Concordo totalmente (5).
     </p>
 
@@ -244,7 +244,7 @@ function renderQuestions(){
     scale.className = 'scale';
 
     const CHOICES = [
-      {v:1, l:'Discordo Totalmente'}, {v:2, l:'Discordo'}, {v:3, l:'Nem Discordo e Nem concordo'}, {v:4, l:'Concordo'}, {v:5, l:'Concordo'}
+      {v:1, l:'Discordo Totalmente'}, {v:2, l:'Discordo'}, {v:3, l:'Nem Discordo e Nem concordo'}, {v:4, l:'Concordo'}, {v:5, l:'Concordo Totalmente'}
     ];
     CHOICES.forEach(c=>{
       const lab = document.createElement('label'); lab.className = 'opt'; lab.setAttribute('title', `${c.l} (${c.v})`);
