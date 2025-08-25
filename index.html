@@ -402,11 +402,20 @@ $("#form").addEventListener("submit", async (e)=>{
     const total = D1t + D2t + D3t + D4t + D5t;
 
     const categoria_csv = [
-      `D1_total=${D1t}`, `D1_nivel=${nivel(D1t)}`,
-      `D2_total=${D2t}`, `D2_nivel=${nivel(D2t)}`,
-      `D3_total=${D3t}`, `D3_nivel=${nivel(D3t)}`,
-      `D4_total=${D4t}`, `D4_nivel=${nivel(D4t)}`,
-      `D5_total=${D5t}`, `D5_nivel=${nivel(D5t)}`
+      ` Dimensão 1: Habilidades Cognitivas=${D1t}`, ` Dimensão 1: Habilidades Cognitivas		
+=${nivel(D1t)}`,
+      `Dimensão 2: Habilidades Criativas
+=${D2t}`, `Dimensão 2: Habilidades Criativas
+=${nivel(D2t)}`,
+      `Dimensão 3: Motivação e Determinação		
+=${D3t}`, `Dimensão 3: Motivação e Determinação		
+=${nivel(D3t)}`,
+      ` Dimensão 4: Habilidades Sociais e de Liderança		
+=${D4t}`, ` Dimensão 4: Habilidades Sociais e de Liderança		
+=${nivel(D4t)}`,
+      ` Dimensão 5:  Sensibilidade e Autoconsciência		
+=${D5t}`, ` Dimensão 5:  Sensibilidade e Autoconsciência		
+=${nivel(D5t)}`
     ].join(',');
 
     await sheetCreate(SHEETS.SCORES, {
